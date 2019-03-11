@@ -7,6 +7,8 @@ import { EnglishMergedExtractorConfiguration, EnglishMergedParserConfiguration }
 import { SpanishMergedParserConfiguration, SpanishMergedExtractorConfiguration } from "./spanish/mergedConfiguration";
 import { FrenchMergedParserConfiguration, FrenchMergedExtractorConfiguration } from "./french/mergedConfiguration";
 import { ChineseMergedExtractor, ChineseMergedParser, ChineseFullMergedParser } from "./chinese/mergedConfiguration";
+import { PortugueseMergedParserConfiguration, PortugueseMergedExtractorConfiguration } from "./portuguese/mergedConfiguration";
+import { PortugueseCommonDateTimeParserConfiguration } from "./portuguese/baseConfiguration";
 
 export enum DateTimeOptions {
     None = 0, SkipFromToMerge = 1, SplitDateAndTime = 2, Calendar = 4 
@@ -50,6 +52,13 @@ export default class DateTimeRecognizer extends Recognizer<DateTimeOptions> {
         this.registerModel("DateTimeModel", Culture.French, (options) => new DateTimeModel(
             new BaseMergedParser(new FrenchMergedParserConfiguration(), this.Options),
             new BaseMergedExtractor(new FrenchMergedExtractorConfiguration(), this.Options)
+        ));
+        //#endregion
+
+        //#region Portuguese
+        this.registerModel("DateTimeModel", Culture.Portuguese, (options) => new DateTimeModel(
+            new BaseMergedParser(new PortugueseMergedParserConfiguration(new PortugueseCommonDateTimeParserConfiguration()), this.Options),
+            new BaseMergedExtractor(new PortugueseMergedExtractorConfiguration(), this.Options)
         ));
         //#endregion
     }

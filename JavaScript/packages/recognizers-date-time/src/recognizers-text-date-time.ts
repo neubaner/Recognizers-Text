@@ -60,6 +60,18 @@ export { ChineseDateTimePeriodExtractor, ChineseDateTimePeriodParser } from "./d
 export { ChineseSetExtractor, ChineseSetParser } from "./dateTime/chinese/setConfiguration";
 export { ChineseHolidayExtractorConfiguration, ChineseHolidayParser } from "./dateTime/chinese/holidayConfiguration";
 export { ChineseMergedExtractor, ChineseMergedParser, ChineseFullMergedParser } from "./dateTime/chinese/mergedConfiguration";
+export { PortugueseCommonDateTimeParserConfiguration, PortugueseDateTimeUtilityConfiguration } from "./dateTime/portuguese/baseConfiguration";
+export { PortugueseDateExtractorConfiguration, PortugueseDateParserConfiguration } from "./dateTime/portuguese/dateConfiguration";
+export { PortugueseTimeExtractorConfiguration, PortugueseTimeParserConfiguration } from "./dateTime/portuguese/timeConfiguration";
+export { PortugueseDatePeriodExtractorConfiguration, PortugueseDatePeriodParserConfiguration } from "./dateTime/portuguese/datePeriodConfiguration";
+export { PortugueseTimePeriodExtractorConfiguration, PortugueseTimePeriodParserConfiguration } from "./dateTime/portuguese/timePeriodConfiguration";
+export { PortugueseDateTimeExtractorConfiguration, PortugueseDateTimeParserConfiguration } from "./dateTime/portuguese/dateTimeConfiguration";
+export { PortugueseDateTimePeriodExtractorConfiguration, PortugueseDateTimePeriodParserConfiguration } from "./dateTime/portuguese/dateTimePeriodConfiguration";
+export { PortugueseSetExtractorConfiguration, PortugueseSetParserConfiguration } from "./dateTime/portuguese/setConfiguration";
+export { PortugueseDurationExtractorConfiguration, PortugueseDurationParserConfiguration } from "./dateTime/portuguese/durationConfiguration";
+export { PortugueseHolidayExtractorConfiguration, PortugueseHolidayParserConfiguration } from "./dateTime/portuguese/holidayConfiguration";
+export { PortugueseMergedExtractorConfiguration, PortugueseMergedParserConfiguration } from "./dateTime/portuguese/mergedConfiguration";
+
 
 export { BaseDateTime } from "./resources/baseDateTime";
 export { EnglishDateTime } from "./resources/englishDateTime";
