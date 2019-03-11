@@ -8,7 +8,8 @@ var LanguagesConfig = [
     'English',
     'Spanish',
     'Chinese',
-    'French'
+    'French',
+    'Portuguese',
 ];
 
 var ExtractorTypes = {

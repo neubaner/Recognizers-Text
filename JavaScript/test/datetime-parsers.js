@@ -7,12 +7,14 @@ var Recognizers = require('@microsoft/recognizers-text-date-time');
 var EnglishCommonDateTimeParserConfiguration = Recognizers.EnglishCommonDateTimeParserConfiguration;
 var SpanishCommonDateTimeParserConfiguration = Recognizers.SpanishCommonDateTimeParserConfiguration;
 var FrenchCommonDateTimeParserConfiguration = Recognizers.FrenchCommonDateTimeParserConfiguration;
+var PortugueseCommonDateTimeParserConfiguration = Recognizers.PortugueseCommonDateTimeParserConfiguration;
 
 var LanguagesConfig = {
     'English': new EnglishCommonDateTimeParserConfiguration(),
     'Spanish': new SpanishCommonDateTimeParserConfiguration(),
     'French': new FrenchCommonDateTimeParserConfiguration(),
-    'Chinese': null
+    'Chinese': null,
+    'Portuguese': new PortugueseCommonDateTimeParserConfiguration()
 };
 
 var ParserTypes = [
